@@ -14,9 +14,9 @@
           <element id="module-output" name="ProyectoHibernate" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.3.3" />
-          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.5.0" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.3.4" />
+          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.5.0" />
           <element id="library" level="project" name="Maven: org.hibernate.orm:hibernate-core:6.0.2.Final" />
           <element id="library" level="project" name="Maven: jakarta.persistence:jakarta.persistence-api:3.0.0" />
           <element id="library" level="project" name="Maven: jakarta.transaction:jakarta.transaction-api:2.0.0" />
@@ -33,7 +33,6 @@
           <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:4.0.1" />
           <element id="library" level="project" name="Maven: jakarta.inject:jakarta.inject-api:2.0.0" />
           <element id="library" level="project" name="Maven: org.antlr:antlr4-runtime:4.10" />
-          <element id="library" level="project" name="Maven: org.jfree:jfreechart:1.5.3" />
           <element id="library" level="project" name="Maven: net.sf.jasperreports:jasperreports:6.19.1" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.4" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
@@ -51,6 +50,7 @@
           <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.2.1" />
           <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:6.2.7" />
           <element id="library" level="project" name="Maven: net.sf.jasperreports:jasperreports-fonts:6.19.1" />
+          <element id="library" level="project" name="Maven: org.jfree:jfreechart:1.5.3" />
         </element>
       </element>
       <element id="directory" name="META-INF">

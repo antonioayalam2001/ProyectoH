@@ -18,56 +18,31 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.3.3</version>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>8.0.1</version>
-            <scope>provided</scope>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.3.4</version>
         </dependency>
+
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>6.0.2.Final</version>
         </dependency>
 
-<!--        Funcionamiento Local-->
-<!--        <dependency>-->
-<!--            <groupId>jakarta.platform</groupId>-->
-<!--            <artifactId>jakarta.jakartaee-web-api</artifactId>-->
-<!--            <version>9.1.0</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-<!--         ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- This dependency gives is an  Automatic Resource Management, automatic generation of getters, setters,
-        equals, hashCode and toString, and more!
- -->
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -75,28 +50,30 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--        End projectLombok Dependency-->
-
-
-        <!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->
-        <dependency>
-            <groupId>org.jfree</groupId>
-            <artifactId>jfreechart</artifactId>
-            <version>1.5.3</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
             <version>6.19.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports-fonts -->
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports-fonts</artifactId>
             <version>6.19.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.github.jsimone</groupId>
+            <artifactId>webapp-runner</artifactId>
+            <version>9.0.27.1</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
