@@ -26,7 +26,7 @@ ${dtoA}
             <div class='col-12  col-md-12 col-lg-5'>
                 <div class='form-floating mb-3 mt-3'>
                     <input  class='mb-2  form-control text-center' type='text' name='idArt' id='idArt'
-                           placeholder='Id Articulo' maxlength='50' value="${dtoA.entidad.idArticulo}" readonly>
+                           placeholder='Id Articulo' maxlength='50' value="${dtoA.idArticulo}" readonly>
                     <label class='mb-2' for='idArt'>Id Articulo</label>
                 </div>
             </div>
@@ -34,7 +34,7 @@ ${dtoA}
             <div class='col-12  col-md-4 col-lg-5'>
                 <div class='form-floating mb-3 mt-3'>
                     <input required class='mb-2  form-control text-center' type='text' name='nomA' id='nomA'
-                           placeholder='Ingresa Descripción' maxlength='50' value="${dtoA.entidad.nomArt}"
+                           placeholder='Ingresa Descripción' maxlength='50' value="${dtoA.nomArti}"
                     >
                     <label class='mb-2' for='nomA'>Nombre del Ariculo</label>
                 </div>
@@ -43,7 +43,7 @@ ${dtoA}
             <div class='col-12  col-md-8 col-lg-5'>
                 <div class='form-floating mb-3 mt-3'>
                     <input required class='mb-2  form-control text-center' type='text' name='desA' id='desA'
-                           placeholder='Ingresa Descripción' maxlength='50' value="${dtoA.entidad.descArti}"
+                           placeholder='Ingresa Descripción' maxlength='50' value="${dtoA.descArti}"
                     >
                     <label class='mb-2' for='desA'>Descripcion Articulo</label>
                 </div>
@@ -52,7 +52,7 @@ ${dtoA}
             <div class='col-12 col-md-4 col-lg-5'>
                 <div class='form-floating mb-3 mt-3'>
                     <input required class='mb-2  form-control text-center' type='text' name='exsA' id='exsA'
-                           placeholder='Existencias' maxlength='50' value="${dtoA.entidad.existencia}"
+                           placeholder='Existencias' maxlength='50' value="${dtoA.existencia}"
                     >
                     <label class='mb-2' for='exsA'>Existencias del Articulo</label>
                 </div>
@@ -61,7 +61,7 @@ ${dtoA}
             <div class='col-12 col-md-4 col-lg-5'>
                 <div class='form-floating mb-3 mt-3'>
                     <input required class='mb-2  form-control text-center' type='text' name='price' id='price'
-                           placeholder='Precio' maxlength='50' value="${dtoA.entidad.precio}"
+                           placeholder='Precio' maxlength='50' value="${dtoA.precio}"
                     >
                     <label class='mb-2' for='price'>Precio</label>
                 </div>
@@ -70,7 +70,7 @@ ${dtoA}
             <div class='col-12 col-md-4 col-lg-5'>
                 <div class='form-floating mb-3 mt-3'>
                     <input required class='mb-2  form-control text-center' type='text' name='stcMx' id='stcMx'
-                           placeholder='Stock Maximo' maxlength='50' value="${dtoA.entidad.stockMaximo}"
+                           placeholder='Stock Maximo' maxlength='50' value="${dtoA.stockMaximo}"
                     >
                     <label class='mb-2' for='stcMx'>stock Maximo</label>
                 </div>
@@ -79,7 +79,7 @@ ${dtoA}
             <div class='col-12 col-md-6 col-lg-5'>
                 <div class='form-floating mb-3 mt-3'>
                     <input required class='mb-2  form-control text-center' type='text' name='stcMn' id='stcMn'
-                           placeholder='Stock Minimo' maxlength='50' value="${dtoA.entidad.stockMinimo}"
+                           placeholder='Stock Minimo' maxlength='50' value="${dtoA.stockMinimo}"
                     >
                     <label class='mb-2' for='stcMn'>stock Minimo</label>
                 </div>
@@ -89,7 +89,7 @@ ${dtoA}
                 <div class='form-floating mb-3 mt-3'>
                     <select name="idCat" id="idCat" class="form-select">
                         <c:forEach items="${listaCat}" var="dto">
-                            <option value="${dto.entidad.idCategoria}"/>${dto.entidad.idCategoria} -> ${dto.entidad.nombreCategoria}</option>
+                            <option value="${dto.idCategoria}"/>${dto.idCategoria} -> ${dto.nombreCategoria}</option>
                         </c:forEach>
                     </select>
                     <label class='mb-2' for='idCat'>Id Categoria</label>

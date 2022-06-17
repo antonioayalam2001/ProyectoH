@@ -37,16 +37,16 @@
         <c:forEach items="${listaArticulo}" var="dto">
 
             <tr class="text-center table-primary">
-                <td class="align-middle "><a href="./ArticuloS?accion=ver&id=<c:out value="${dto.entidad.idArticulo}"/>" class="btnP"><c:out value="${dto.entidad.idArticulo}"/></a> </td>
-                <td class="align-middle "><c:out value="${dto.entidad.nomArt}"/></td>
-                <td class="align-middle "><c:out value="${dto.entidad.descArti}"/></td>
-                <td class="align-middle "><c:out value="${dto.entidad.existencia}"/></td>
-                <td class="align-middle "><c:out value="${dto.entidad.precio}"/></td>
-                <td class="align-middle "><c:out value="${dto.entidad.stockMinimo}"/></td>
-                <td class="align-middle "><c:out value="${dto.entidad.stockMaximo}"/></td>
-                <td class="align-middle "><c:out value="${dto.entidad.idCategoria}"/></td>
-                <td class="align-middle "><a href="./ArticuloS?accion=del&id=<c:out value="${dto.entidad.idArticulo}"/>" class="btn btn-danger p-2 rounded-circle"><i class='bx bxs-trash'></i></a></td>
-                <td class="align-middle "><a href="./ArticuloS?accion=act&id=<c:out value="${dto.entidad.idArticulo}"/>" class="btn btn-primary p-2 text-white rounded-circle"><i
+                <td class="align-middle "><a href="./ArticuloS?accion=ver&id=<c:out value="${dto.idArticulo}"/>" class="btnP"><c:out value="${dto.idArticulo}"/></a> </td>
+                <td class="align-middle "><c:out value="${dto.nomArti}"/></td>
+                <td class="align-middle "><c:out value="${dto.descArti}"/></td>
+                <td class="align-middle "><c:out value="${dto.existencia}"/></td>
+                <td class="align-middle "><c:out value="${dto.precio}"/></td>
+                <td class="align-middle "><c:out value="${dto.stockMinimo}"/></td>
+                <td class="align-middle "><c:out value="${dto.stockMaximo}"/></td>
+                <td class="align-middle "><c:out value="${dto.categoriaId}"/></td>
+                <td class="align-middle "><a href="./ArticuloS?accion=del&id=<c:out value="${dto.idArticulo}"/>" class="btn btn-danger p-2 rounded-circle"><i class='bx bxs-trash'></i></a></td>
+                <td class="align-middle "><a href="./ArticuloS?accion=act&id=<c:out value="${dto.idArticulo}"/>" class="btn btn-primary p-2 text-white rounded-circle"><i
                         class='bx bx-edit bx-sm'></i></a></td>
             </tr>
         </c:forEach>

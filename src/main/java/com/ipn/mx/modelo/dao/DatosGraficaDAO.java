@@ -1,7 +1,6 @@
 package com.ipn.mx.modelo.dao;
 
 import com.ipn.mx.modelo.DbConnection;
-import com.ipn.mx.modelo.dto.CategoriaDTO;
 import com.ipn.mx.modelo.dto.DatosGraficaDTO;
 
 import java.sql.Connection;
@@ -12,8 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DatosGraficaDAO {
-    private static final String SQL_GRAFICAR = "select \"Categoria\".\"nombreCategoria\", count(\"Articulo\".\"idArticulo\") as Cantidad from \"Categoria\" inner join \"Articulo\" on  \"Categoria\".\"idCategoria\"=\"Articulo\".\"categoriaId\" group by \"Categoria\"\n" +
-            ".\"idCategoria\"";
+    private static final String SQL_GRAFICAR = "select \"categoria\".\"nombrecategoria\", count(\"articulo\".\"idarticulo\") as Cantidad from \"categoria\" inner join \"articulo\" on  \"categoria\"" +
+            ".\"idcategoria\"=\"articulo\".\"categoriaid\" group by \"categoria\"\n" +
+            ".\"idcategoria\"";
     DbConnection db = DbConnection.getInstance();
     Connection connection;
 

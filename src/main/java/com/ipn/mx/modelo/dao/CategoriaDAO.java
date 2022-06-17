@@ -24,18 +24,6 @@ import java.util.List;
 //import java.util.List;
 //
 public class CategoriaDAO {
-//    private static final String SQL_INSERT = "insert into Alumno(nombreAlumno,paternoAlumno,maternoAlumno,emailAlumno,idCarrera) " +
-//            " values(?, ?,?,?,?)";
-//    private static final String SQL_UPDATE = "update  Alumno set nombreAlumno = ?, maternoAlumno = ? ,paternoAlumno = ? , emailAlumno =? ,idCarrera=?" +
-//            "  where idAlumno=?";
-//    private static final String SQL_Delete = "Delete from  Alumno " +
-//            "  where idAlumno=?";
-//    private static final String SQL_SELECT = "Select *from Alumno where idAlumno = ?";
-//    private static final String SQL_SELECTALL = "Select *from Alumno";
-//    //    Since we are using the Singleton mode we cannot do this anymore
-//    private DbConnection conexion = DbConnection.instancia();
-//    With singleton we have to declare like this:
-
     public CategoriaDAO() {
     }
 
@@ -44,7 +32,7 @@ public class CategoriaDAO {
         Categoria categoria = new Categoria();
         categoria.setIdCategoria(4);
         categoria = dao.read(categoria);
-        System.out.println(categoria.getDescripcionCategoria().toString());
+        System.out.println(categoria.getDescripcionCategoria());
 //        categoria.setNombreCategoria("Bajo en ");
 //        categoria.setDescripcionCategoria("Hola  todos  estan");
 //        dao.create(categoria);
@@ -129,6 +117,5 @@ public class CategoriaDAO {
         transaction.commit();
         return resultados;
     }
-
 
 }

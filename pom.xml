@@ -18,6 +18,8 @@
     </properties>
 
     <dependencies>
+
+<!--        Funcionamiento HEROKU-->
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
@@ -30,6 +32,7 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+        <!--        Funcionamiento HEROKU-->
 
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -74,6 +77,16 @@
             <version>9.0.27.1</version>
             <scope>provided</scope>
         </dependency>
+
+<!--        Funcionamiento Local-->
+<!--                <dependency>-->
+<!--                    <groupId>jakarta.platform</groupId>-->
+<!--                    <artifactId>jakarta.jakartaee-web-api</artifactId>-->
+<!--                    <version>9.1.0</version>-->
+<!--                    <scope>provided</scope>-->
+<!--                </dependency>-->
+<!--        """"""""""""""""""""""""""""""""""""""""""""-->
+
 
     </dependencies>
 
