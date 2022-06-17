@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="PERSISTENCE">
+<!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+
+        <class>com.ipn.mx.modelo.entidades.Articulo</class>
+        <class>com.ipn.mx.modelo.entidades.Categoria</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:postgresql://ec2-3-230-122-20.compute-1.amazonaws.com:5432/da9c5ng80r81ft"/>
+            <property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-3-230-122-20.compute-1.amazonaws.com:5432/da9c5ng80r81ft"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://ec2-3-230-122-20.compute-1.amazonaws.com:5432/da9c5ng80r81ft"/>
+            <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://ec2-3-230-122-20.compute-1.amazonaws.com:5432/da9c5ng80r81ft"/>
+            <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.user" value="rnlitnpeqtvviu"/>
+            <property name="hibernate.connection.password" value="9660ab63275cd7e475d05c489c9b0e7994ce621f9f06682eabecaf4e8a450db0"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="javax,persistence.jdbc.url" value="jdbc:postgresql://ec2-3-230-122-20.compute-1.amazonaws.com:5432/da9c5ng80r81ft"/>
+            <property name="javax,persistence..dbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax,persistence.dbc.user" value="rnlitnpeqtvviu"/>
+            <property name="javax,persistence.dbc.password" value="9660ab63275cd7e475d05c489c9b0e7994ce621f9f06682eabecaf4e8a450db0"/>
+        </properties>
+    </persistence-unit>
+</persistence>

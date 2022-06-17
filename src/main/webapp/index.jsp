@@ -11,20 +11,16 @@
         id="hero"
 >
     <h1 class="text-center mb-4 position-relative">
-Escuela Web    </h1>
+Proyecto Realizado con la implementación de Hibernate    </h1>
     <p class="p-4 position-relative ">
-        ontrary to popular belief, Lorem Ipsum is not simply random text. It has
-        roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old. Richard McClintock, a Latin professor at
-        Hampden-Sydney College in Virginia, looked up one of the more obscure
-        Latin words, consectetur, from a Lorem Ipsum passage, and going through
-        the cites of the word in classical literature, discovered the
-        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-        of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-        Cicero, written in 45 BC. This book is a treatise on the theory of
-        ethics, very popular during the Renaissance. The first line of Lorem
-        Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-        1.10.32.
+        Hibernate es una herramienta de mapeo objeto-relacional (ORM) bajo licencia GNU LGPL para Java, que facilita el mapeo de atributos en una base de datos
+        tradicional, y el modelo de objetos de un aplicación mediante archivos declarativos o anotaciones en los
+        beans de las entidades que permiten establecer estas relaciones. Todo lo dicho, que suena a vendedor de seguros, se resume en que agiliza la relación entre la aplicación y
+        nuestra base de datos SQL, de un modo que optimiza nuestro flujo de trabajo evitando caer en código repetitivo.
+        Imagina un programa sencillo. Necesitas un método que permita dar de alta, baja, o modificar los datos de usuarios. Estos datos se almacenan en una base de datos, y cada
+        objeto tiene diferentes clases. Para cada objeto debemos crear una clase que al menos permita crear, insertar, eliminar, consultar o modificar la información contenida en sus
+        atributos. Esto, con excepción de alguna consulta un poco especial, es siempre lo mismo (SELECT, UPDATE, CREATE, FROM, WHERE, GROUP BY, ORDER BY y etc). Y no sé tú, pero no me
+        gusta desperdiciar mi café en esas tareas cuando debo preocuparme de las consultas especiales que es donde suele estar el tomate.
     </p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#fffbfd" fill-opacity="1"
@@ -42,10 +38,9 @@ Escuela Web    </h1>
                         <div class="card-body d-flex flex-column align-items-center">
                             <h5 class="card-title">Listar</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
+                                Observa la lista de categorias que hay disponibles
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="./CategoriasServlet?accion=listaDeCategorias" class="btn btn-primary">Ctaegorias</a>
                         </div>
                     </div>
                 </div>
@@ -55,10 +50,9 @@ Escuela Web    </h1>
                         <div class="card-body d-flex flex-column align-items-center">
                             <h5 class="card-title">Graficas</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
+                                Da un vistazo a las graficas que podemos proporcionar
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="./ArticuloS?accion=graficar" class="btn btn-primary">Graficar</a>
                         </div>
                     </div>
                 </div>
@@ -66,12 +60,11 @@ Escuela Web    </h1>
                     <div class="card justify-content-center align-items-center">
                         <i class='bx bx-trash' ></i>
                         <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title">Eliminar</h5>
+                            <h5 class="card-title">Agrega</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
+                                Agrega un nuevo artículo a la lista
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="./ArticuloS?accion=nue" class="btn btn-primary">Agrega Articulo</a>
                         </div>
                     </div>
                 </div>
@@ -79,12 +72,11 @@ Escuela Web    </h1>
                     <div class="card">
                         <i class='bx bx-add-to-queue' ></i>
                         <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title">Agregar</h5>
+                            <h5 class="card-title">Agregar Categoria</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
+                                Agrega una categoria nueva
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-primary">Agregar Categoria</a>
                         </div>
                     </div>
                 </div>
